@@ -7,7 +7,7 @@ export const WhitUserView = ({onClick}:Props) => {
   return (
     <Flex direction={"column"} gap={'2rem'}>
       <Image src={"/descarga.jpg"} alt="img" width={400} height={400}/>
-      <Button onClick={onClick}>Volver</Button>
+      <Button onClick={onClick} colorScheme="teal">Volver</Button>
     </Flex>
   )
 }

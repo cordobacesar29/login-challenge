@@ -79,7 +79,7 @@ export const LoginContainer = () => {
           />
           <TextError error={errors.password?.message} />
         </FormControl>
-        <Button type="submit" w={"full"} mt={"2rem"} isLoading={loading}>
+        <Button type="submit" w={"full"} mt={"2rem"} isLoading={loading} colorScheme="teal">
           Submit
         </Button>
       </Card>
