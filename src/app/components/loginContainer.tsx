@@ -45,9 +45,8 @@ export const LoginContainer = () => {
     }, 2000);
   };
 
-  const LayoutMemo = useMemo(() => {
-    if (loading) return <CircularProgress isIndeterminate />;
-    else if (user) return <WhitUserView onClick={()=>setUser(null)}/>;
+  if (loading) return <CircularProgress isIndeterminate />
+  if (user) return <WhitUserView onClick={()=>setUser(null)}/>;
     return (
       <Card
         justify={"center"}
@@ -84,7 +83,4 @@ export const LoginContainer = () => {
         </Button>
       </Card>
     );
-  }, [loading, user]);
-
-  return LayoutMemo;
 };
